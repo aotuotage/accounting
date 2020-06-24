@@ -1,6 +1,9 @@
 <template>
   <div class="ac_header">
     张奥博真帅
+    <router-link to='/' class='tolist'>
+      <i class="el-icon-s-fold"></i>
+    </router-link>
   </div>
 </template>
 <script>
@@ -23,5 +26,24 @@ export default {
   line-height:70px;
   background-color: #333;
   margin-top: 80px;
+}
+.tolist{
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  bottom: 50px;
+  right: 10px;
+  border: 1px solid #666;
+  border-radius: 50%;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tolist i{
+  color:#666;
+  font-size:20px;
+  height: 18px;
+  overflow: hidden;
 }
 </style>

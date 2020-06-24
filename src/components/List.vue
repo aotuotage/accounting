@@ -39,7 +39,9 @@ export default {
 .ac_list ul li{
   width:100%;
   height: 40px;
-  border-bottom: 1px solid #999;
+  border-bottom: 1px solid #EBEEF5;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+  margin-top:10px;
 }
 .ac_list ul li a{
   line-height:40px;
