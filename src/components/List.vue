@@ -2,17 +2,22 @@
   <div class="ac_list">
     <Header></Header>
     <ul>
-      <li v-bind:key="index" v-for="(item,index) in list"><a href="">{{item}}</a></li>
+      <li v-bind:key="index" v-for="(item,index) in list">
+        <router-link :to="{name:'Detail',query:{id:index}}">{{item}}</router-link>
+      </li>
     </ul>
+    <Footer></Footer>
   </div>
 </template>
 <script>
 import Header from '@/components/Header'
-import list from '../assets/data/list.js' // 引入
+import Footer from '@/components/Footer'
+import Detail from '@/components/Detail'
+import list from '../assets/data/list.js' // 题目列表
 export default {
   name: 'List',
   components:{
-    Header
+    Header,Footer
   },
   data () {
     return {
@@ -21,7 +26,6 @@ export default {
   },
   created () {
     this.list = list.list
-    console.log(list)
   }
 }
 </script>
@@ -39,7 +43,7 @@ export default {
 }
 .ac_list ul li a{
   line-height:40px;
-  color: #333;
+  color: #666;
   font-size: 18px;
   text-decoration: none;
 }
