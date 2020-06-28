@@ -4,6 +4,9 @@
     <router-link to='/' class='tolist'>
       <i class="el-icon-s-fold"></i>
     </router-link>
+    <div class='tolist2' @click="gotop">
+      <i class="el-icon-top"></i>
+    </div>
   </div>
 </template>
 <script>
@@ -12,6 +15,11 @@ export default {
   data () {
     return {
       msg: ''
+    }
+  },
+  methods:{
+    gotop(){
+      document.documentElement.scrollTop = 0
     }
   }
 }
@@ -40,7 +48,20 @@ export default {
   align-items: center;
   justify-content: center;
 }
-.tolist i{
+.tolist2{
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  bottom: 100px;
+  right: 10px;
+  border: 1px solid #666;
+  border-radius: 50%;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tolist i,.tolist2 i{
   color:#666;
   font-size:20px;
   height: 18px;
