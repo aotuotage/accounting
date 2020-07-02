@@ -11,7 +11,7 @@
         刘爽的<br>错题本
       </router-link>
     </div>
-    <Footer></Footer>
+    <Footer :shownum="shownum"></Footer>
   </div>
 </template>
 <script>
@@ -27,7 +27,8 @@ export default {
   },
   data () {
     return {
-      list: []
+      list: [],
+      shownum:0
     }
   },
   created () {

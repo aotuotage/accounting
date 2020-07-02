@@ -21,7 +21,7 @@
     <div class="nulldata" v-if="!ishow">
       刘爽同学你还没有错题，快去做题吧！
     </div>
-    <Footer></Footer>
+    <Footer :shownum="shownum"></Footer>
   </div>
 </template>
 <script>
@@ -35,7 +35,8 @@ export default {
   data () {
     return {
       list: [],
-      ishow: true
+      ishow: true,
+      shownum:2
     }
   },
   created () {

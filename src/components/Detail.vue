@@ -2,7 +2,7 @@
   <div class="ac_detail">
     <Header></Header>
     <div class="now">剩余时间:{{countDownList}}分钟</div>
-    <h3>一、单选，每小题1.5分</h3>
+    <h3 id="one">一、单选，每小题1.5分</h3>
     <el-card class="box-card" v-for="(item,i) in qa" :key="i">
         <div slot="header" class="clearfix">
           {{i+1}}.<span>{{item.title}}</span>
@@ -18,7 +18,7 @@
           <p>相关链接:<br><a :href="item.link">点击跳转</a></p>
         </div>
     </el-card>
-    <h3>二、多选，每小题2分</h3>
+    <h3 id="two">二、多选，每小题2分</h3>
     <el-card class="box-card" v-for="(item,i) in qa2" :key="i+'one'">
         <div slot="header" class="clearfix">
           {{i+1}}.<span>{{item.title}}</span>
@@ -36,7 +36,7 @@
           <p>相关链接:<br><a :href="item.link">点击跳转</a></p>
         </div>
     </el-card> 
-    <h3>三、判断题，每小题1分</h3>
+    <h3 id="three">三、判断题，每小题1分</h3>
     <el-card class="box-card" v-for="(item,i) in qa3" :key="i+'three'">
         <div slot="header" class="clearfix">
           {{i+1}}.<span>{{item.title}}</span>
@@ -52,7 +52,7 @@
           <p>相关链接:<br><a :href="item.link">点击跳转</a></p>
         </div>
     </el-card>
-    <h3>四、不定选择题，每小题2分</h3>
+    <h3 id="four">四、不定选择题，每小题2分</h3>
       <el-card class="box-card ziliao-text" v-html="ziliao2.title">
       </el-card>
       <el-card class="box-card" v-for="(item,i) in ziliao2.list" :key="i+'four'">
@@ -114,7 +114,7 @@
     <div class="Totalscore" v-if="ishow">
       刘爽同学您的总分为：{{surenum}}
     </div>
-    <Footer></Footer>
+    <Footer :shownum="shownum"></Footer>
   </div>
 </template>
 <script>
@@ -136,7 +136,8 @@ export default {
       ishow:false,
       ziliao2:{},
       ziliao3:{},
-      ziliao4:{}
+      ziliao4:{},
+      shownum:3
     }
   },
   created (){
