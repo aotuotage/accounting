@@ -112,7 +112,7 @@
       </el-card> 
     <el-button type="primary" v-if="!ishow" @click="endbtn" class="endbtn">交卷</el-button>
     <div class="Totalscore" v-if="ishow">
-      刘爽同学您的总分为：{{surenum}}
+      同学您的总分为：{{surenum}}
     </div>
     <Footer :shownum="shownum"></Footer>
   </div>
@@ -250,12 +250,12 @@ export default {
     sure(i){
       if(this.qa2[i].correct.toString() == this.qa2[i].option.sort().toString()){
           this.$message({
-            message: '刘爽厉害啊！',
+            message: '厉害啊！',
             type: 'success'
           });
           this.surenum+=2;
       }else{
-        this.$message.error('加油啊刘爽！');
+        this.$message.error('加油啊！');
       }
       this.qa2[i].ishow = true;
     },
@@ -309,7 +309,7 @@ export default {
         }
       })
       _this.$message({
-        message: '恭喜刘爽同学获得'+_this.surenum+"分",
+        message: '恭喜同学获得'+_this.surenum+"分",
         type: 'success'
       });
       let wqlistbj = {

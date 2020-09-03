@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import List from '@/components/List'
 import Detail from '@/components/Detail'
 import Wrongq from '@/components/Wrongq'
+import MemoryFlow from '@/components/MemoryFlow'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/Wrongq',
       name: 'Wrongq',
       component: Wrongq
+    },
+    {
+      path: '/MemoryFlow',
+      name: 'MemoryFlow',
+      component: MemoryFlow
     }
   ]
 })

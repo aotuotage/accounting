@@ -1,6 +1,6 @@
 <template>
   <div class="ac_header">
-    刘爽最美
+    张奥博真帅
   </div>
 </template>
 <script>

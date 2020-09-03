@@ -19,7 +19,7 @@
       </el-card>
     </div>
     <div class="nulldata" v-if="!ishow">
-      刘爽同学你还没有错题，快去做题吧！
+      你还没有错题，快去做题吧！
     </div>
     <Footer :shownum="shownum"></Footer>
   </div>

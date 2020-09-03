@@ -7,8 +7,13 @@
       </li>
     </ul>
     <div class="wrongbook">
+      <router-link class="towq" :to="{name:'MemoryFlow'}">
+        《公共基础知识》记忆流
+      </router-link>
+    </div>
+    <div class="wrongbook">
       <router-link class="towq" :to="{name:'Wrongq'}">
-        刘爽的<br>错题本
+        您的错题本
       </router-link>
     </div>
     <Footer :shownum="shownum"></Footer>
@@ -44,16 +49,16 @@ export default {
 <style scoped>
 .wrongbook{
   width:200px;
-  height:200px;
+  height:100px;
   margin:0 auto;
   margin-top:80px;
-  border-radius:50%;
+  border-radius:20px;
   color: #ffffff;
   background:#67c23a;
   display:flex;
   justify-content: center;
   align-items: center;
-  font-size: 24px;
+  font-size: 16px;
 }
 .towq{
   text-decoration: none;
