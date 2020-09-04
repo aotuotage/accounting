@@ -1,16 +1,16 @@
 <template>
   <div class="ac_list">
     <Header></Header>
-    <ul>
-      <li v-bind:key="index" v-for="(item,index) in list">
-        <router-link :to="{name:'Detail',query:{id:index}}">{{item}}</router-link>
-      </li>
-    </ul>
     <div class="wrongbook">
       <router-link class="towq" :to="{name:'MemoryFlow'}">
         《公共基础知识》记忆流
       </router-link>
     </div>
+    <ul>
+      <li v-bind:key="index" v-for="(item,index) in list">
+        <router-link :to="{name:'Detail',query:{id:index}}">{{item}}</router-link>
+      </li>
+    </ul>
     <div class="wrongbook">
       <router-link class="towq" :to="{name:'Wrongq'}">
         您的错题本
@@ -48,8 +48,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .wrongbook{
-  width:200px;
-  height:100px;
+  width:90%;
+  height:70px;
   margin:0 auto;
   margin-top:80px;
   border-radius:20px;

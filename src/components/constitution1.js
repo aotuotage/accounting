@@ -11,43 +11,59 @@ let constitution1 = {
     },{
       label: '新中国宪法的历史',
       children: [{
-        label: '前四次《宪法修正案》'
+        label: '前四次《宪法修正案》',
+        id: '3'
       },{
-        label: '2018年第五次《宪法修正案》'
+        label: '2018年第五次《宪法修正案》',
+        id: '3'
       }]
     },{
       label: '国家制度',
       children: [{
-        label: '国体'
+        label: '国体',
+        id: '4'
       },{
-        label: '政党制度和政协制度'
+        label: '政党制度和政协制度',
+        id: '4'
       },{
-        label: '政体'
+        label: '政体',
+        id: '4'
       },{
-        label: '选举制度的基本原则'
+        label: '选举制度的基本原则',
+        id: '4'
       },{
-        label: '民族区域自治制度'
+        label: '民族区域自治制度',
+        id: '4'
       },{
-        label: '特别行政区制度'
+        label: '特别行政区制度',
+        id: '5'
       },{
-        label: '基本经济制度'
+        label: '基本经济制度',
+        id: '5'
       },{
-        label: '基本群众自治制度'
+        label: '基本群众自治制度',
+        id: '5'
       }]
     },{
-      label: '公民的基本权利'
+      label: '公民的基本权利',
+      id: '6'
     },{
       label: '国家机构',
       children: [{
-        label: '全国人民代表大会'
+        label: '全国人民代表大会',
+        id: '7'
       },{
-        label: '国务院'
+        label: '国务院',
+        id: '7'
       },{
-        label: '全国人大常委会'
+        label: '全国人大常委会',
+        id: '7'
       },{
-        label: '人大代表'
+        label: '人大代表',
+        id: '8'
       },{
-        label: '监察委员会'
+        label: '监察委员会',
+        id: '8'
       }]
     }]
   }],
@@ -170,7 +186,7 @@ let constitution1 = {
       <p>前四次《宪法修正案》口诀：1988年：私营土地可转让。1993年：初级特色市场立，五县联产政协制。
       1999年：法治邓论分配多，私营统分反革命。
       2004年：三个代表乡里变，社保人权土地偿。</p>
-      <h3>（二）2018年第五次《宪法修正案》</h3>
+      <p>（二）2018年第五次《宪法修正案》</p>
       <p>2018,<br>①在马列毛邓三科习近平新时代中国 特色社会主义思想指引下
       <br>②和谐美丽现代化强国/伟大复兴
       <br>③致力于复兴的爱国者
@@ -187,16 +203,61 @@ let constitution1 = {
       <br>⑭删国务院/县以上政府监察职能
       <br>⑮增人大常委监督监察委职能
       <br>⑯增人大选举并罢免监察委主任职能
-      <br>⑰增人大常委会任免国家监察委副主任/委 员职能
+      <br>⑰增人大常委会任免国家监察委副主任/委员职能
       <br>⑱增人大常委不得担任监察机关职务
       ⑲“法制”变“法治”</p>
       `,
-      id:'id1',
+      id:'id3',
       matching: [{
+        text: '增人大常委不得担任监察机关职务',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '“法制”变“法治”',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
         text: '私营土地可转让',
         style: 'display:inline-block;background:#CC0000;color:#ffffff;'
       },{
         text: '《中国人民政治协商会议共 同纲领》',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },,{
+        text: '马列毛邓三',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '复兴的爱国者',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '平等团结互助和谐',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '社会主义核心价值观',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '命运共同体',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '共产党领导最本质',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '人大选举并罢免监察委主任职能',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '增人大常委监督监察委职能',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '删主席副主席不超两届',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '和谐美丽现代化',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '习近平新时代',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },,{
+        text: '乡三改五',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '增国歌',
         style: 'display:inline-block;background:#CC0000;color:#ffffff;'
       },{
         text: '1954年宪法',
@@ -247,28 +308,7 @@ let constitution1 = {
         text: '私经补充',
         style: 'display:inline-block;background:#FFCC00;color:#ffffff;'
       },{
-        text: '多党合作，政治协商',
-        style: 'display:inline-block;background:#FFCC00;color:#ffffff;'
-      },{
         text: '法治 国家',
-        style: 'display:inline-block;background:#FFCC00;color:#ffffff;'
-      },{
-        text: '多党合作，政治协商',
-        style: 'display:inline-block;background:#FFCC00;color:#ffffff;'
-      },{
-        text: '多党合作，政治协商',
-        style: 'display:inline-block;background:#FFCC00;color:#ffffff;'
-      },{
-        text: '多党合作，政治协商',
-        style: 'display:inline-block;background:#FFCC00;color:#ffffff;'
-      },{
-        text: '多党合作，政治协商',
-        style: 'display:inline-block;background:#FFCC00;color:#ffffff;'
-      },{
-        text: '多党合作，政治协商',
-        style: 'display:inline-block;background:#FFCC00;color:#ffffff;'
-      },{
-        text: '多党合作，政治协商',
         style: 'display:inline-block;background:#FFCC00;color:#ffffff;'
       }],
       test: [
@@ -332,7 +372,7 @@ let constitution1 = {
       <p>2.中华人民共和国的一切权力属于人民。</p>
       <p>3.全国人大是最高国家权力机关；地方各级人大是地方国家权力机关；人民行 使国家权力的机关是全国人大和地方各级人大</p>
       `,
-      id:'id3',
+      id:'id4',
       matching: [{
         text: '境 内外敌对势力',
         style: 'display:inline-block;background:#CC0000;color:#ffffff;'
@@ -584,38 +624,103 @@ let constitution1 = {
       (2)管理特区的防务；<br>
       (3)任命特区行政长官及其他主要行政官员；<br>
       (4)任命澳门检察院检察长。
-      <p></p>
+      <h3>7.基本经济制度</h3>
+      <p>1.我国的经济制度</p>
+      <p>(1）我国以公有制经济为主体，非公有制经济是社会主义市场经济的重要组成 部分。</p>
+      <p>（2）公有制经济包括全民所有制、集体所有制和混合所有制中的国有和集体成 分。非公有制经济：个体经济、私营经济和三资企业（鼓励、支持、引导、监督和 管理）。</p>
+      <p>2.自然资源归属</p>
+      <p>国家所有：矿藏、水流、城市的土地。</p>
+      <p>集体所有：宅基地、自留地、自留山。</p>
+      <p>口诀：水矿城土归国有，集体宅山地自留</p>
+      <h3>8.基层群众自治制度</h3>
+      <p>1.性质：村委会是村民自我管理、自我教育、自我服务的基层群众性自治组织。</p>
+      <p>2.村民自治的核心内容是“四个民主”，即民主选举、民主决策、民主管理、 民主监督。</p>
+      <p>口诀：政府村委会指导与协助</p>
       `,
-      id:'id1',
+      id:'id5',
       matching: [{
-        text: '最高法律效力',
+        text: '民主选举',
         style: 'display:inline-block;background:#CC0000;color:#ffffff;'
       },{
-        text: '国家根本法',
+        text: '民主决策',
         style: 'display:inline-block;background:#CC0000;color:#ffffff;'
       },{
-        text: '根本制度',
+        text: '民主管理',
         style: 'display:inline-block;background:#CC0000;color:#ffffff;'
       },{
-        text: '根本任务',
+        text: '民主监督',
         style: 'display:inline-block;background:#CC0000;color:#ffffff;'
       },{
-        text: '基本权利',
+        text: '政府村委会指导与协助',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '基层群众性自治组织',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '水矿城土归国有，集体宅山地自留',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '决定特别行政区',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '制定并修改',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '高度自治',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '行政管理权',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '立法权',
         style: 'display:inline-block;background:#CC0066;color:#ffffff;'
       },{
-        text: '立法基础',
+        text: '独立的司法',
         style: 'display:inline-block;background:#CC0066;color:#ffffff;'
       },{
-        text: '立法依据',
+        text: '终审权',
         style: 'display:inline-block;background:#CC0066;color:#ffffff;'
       },{
-        text: '根据宪法制定的',
+        text: '对基本法的解释权',
         style: 'display:inline-block;background:#CC0066;color:#ffffff;'
       },{
-        text: '宪法的具体化',
+        text: '备案审查权',
         style: 'display:inline-block;background:#CC0066;color:#ffffff;'
       },{
-        text: '政治力量',
+        text: '决定权',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '外交事务',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '特区的防务',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '任命特区行政长',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '澳门检察院检察长',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '公有制经济为主体',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '全民所有制',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '集体所有制',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '混合所有制中的国有和集体成 分',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '个体经济',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '私营经济',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '三资企业',
         style: 'display:inline-block;background:#CC0066;color:#ffffff;'
       }],
       test: [
@@ -625,134 +730,677 @@ let constitution1 = {
           'C.全国人大授权实行高度自治',
           'D.实行独立的税收制度'],
           correct:2,
-          analysis:'宪法是其他法律的立法基础和立法依据',
+          analysis:'全对，国务院任命特区行政长，人大授予其他三项权利',
           link:''
         },
         {
-          title: '下列说法中，不正确的是',
-          answer:['A.宪法的变动必然会引起普通法律随之做出相应的改变','B.宪法是国家所有法律的总和',
-          'C.宪法具有最高的法律效力',
-          'D.宪法是国家的根本大法'],
+          title: '社会主义经济制度的基础是',
+          answer:['A.公有制','B.国有经济',
+          'C.集体经济',
+          'D.公有制和非公有制'],
+          correct:0,
+          analysis:'我国以公有制经济为主体，非公有制经济是社会主义市场经济的重要组成 部分。',
+          link:''
+        },
+        {
+          title: '根据我国《宪法》规定，下列自然资源不能属于集体所有的 是',
+          answer:['A.森林','B.草原',
+          'C.水流',
+          'D.荒地'],
+          correct:2,
+          analysis:'水矿城土归国有，集体宅山地自留',
+          link:''
+        },
+        {
+          title: '根据宪法和物权法规定，下列自然资源中既可属于国家所有也可属于集体所有的是',
+          answer:['A.矿藏','B.土地',
+          'C.水流',
+          'D.海洋'],
           correct:1,
-          analysis:'宪法是其他法律的立法基础不是全部',
+          analysis:'水矿城土归国有，集体宅山地自留(城市土地归国有，农村归集体)',
+          link:''
+        },
+        {
+          title: '我国的基层群众自治性组织，包括',
+          answer:['A.居民委员会','B.村民委员会',
+          'C.高校学生会',
+          'D.乡人民政府'],
+          correct:0,
+          analysis:'A.居民委员会B.村民委员会',
           link:''
         }
       ]
     },
     {
       text:`
-      <h3>1.宪法的概念</h3>
-      <p>宪法是具有最高法律效力的国家根本法。它规定国家的根本制度和根本任务，保障公民的基本权利，集中体现各种政治力量对比关系。</p>
-      <p>宪法是其他法律的立法基础和立法依据。其他法律是根据宪法制定的，是宪法的具体化。</p>
+      <h3>五、公民的基本权利</h3>
+      <p>1.平等权:平等权包括司法平等和守法平等。</p>
+      <p>2.政治权利和自由</p>
+      <p>（1）选举权和被选举权（公民参加国家管理的一项最基本的政治权利）。<br>
+      （2）政治自由，包括言论、出版、集会、结社、游行、示威的自由。<br>
+      (3)被剥夺政治权利不得担任国家公务员与企事业单位领导职务。
+      </p>
+      <p>3.监督权和取得赔偿权</p>
+      <p>监督权包括批评、建议权，控告、检举、申诉权。</p>
+      <p>《宪法》第41条第1款：中华人民共和国公民对于任何国家机关和国家工作人
+      员，有提出批评和建议的权利；对于任何国家机关和国家工作人员的违法失职行为，
+      有向有关国家机关提出申诉、控告或者检举的权利，但是不得捏造或者歪曲事实进 行诬告陷害。
+      </p>
+      <p>4.宗教信仰自由</p>
+      <p>法律规定公民享有宗教信仰自由，即公民依据内心的信念，自愿地信仰宗教的 自由。宗教信仰自由作为一种权利体系，主要由信仰的自由、宗教活动自由、宗教 仪式自由构成。</p>
+      <p>5.人身自由</p>
+      <p>《宪法》第37条：“中华人民共和国公民的人身自由不受侵犯。任何公民，非 经人民检察院批准或者决定或者人民法院决定，并由公安机关执行，不受逮捕。禁 止非法拘禁和以其他方法非法剥夺或者限制公民的人身自由，禁止非法搜查公民的 身体。”</p>
+      <p>(1)生命权。</p>
+      <p>(2)公民的肉体不受非法侵犯，不受非法限制、搜查、拘留和逮捕。</p>
+      <p>(3)人格尊严不受侵犯(姓名权、肖像权、名誉权、荣誉权和隐私权)。</p>
+      <p>《民通意见》第139条规定：以营利为目的，未经公民同意利用其肖像做广告、 商标、装饰橱窗等，应当认定为侵犯公民肖像权的行为。除此之外，恶意毁损、玷 污、丑化公民的肖像，或利用公民肖像进行人身攻击等，也属于侵害肖像权的行为。</p>
+      <p>(4)住宅权不受侵犯。禁止非法搜查或侵入公民住宅。</p>
+      <p>(5)通信自由和通信秘密。</p>
+      <p>《宪法》第40条：“中华人民共和国公民的通信自由和通信秘密受法律的保护。 除因国家安全或者追查刑事犯罪的需要，由公安机关或者检察机关依照法律规定的 程序对通信进行检査外，任何组织或者个人不得以任何理由侵犯公民的通信自由和 通信秘密。”</p>
+      <p>6,社会经济、文化教育方面的权利</p>
+      <p>
+      (1)财产权。公民的合法的私有财产不受侵犯。<br>
+      (2)劳动权。既是公民的权利，也是公民的义务。<br>
+      (3)休息权。劳动者有休息的权利。<br>
+      (4)受教育权。既是公民的权利，也是公民的义务。<br>
+      (5)获得物质帮助权。公民在年老、疾病或者丧失劳动能力的情况下，有从国 家获得物质帮助的权利。<br>
+      (6)文化权利和自由。
+      </p>
       `,
-      id:'id1',
+      id:'id6',
       matching: [{
-        text: '最高法律效力',
+        text: '司法平等',
         style: 'display:inline-block;background:#CC0000;color:#ffffff;'
       },{
-        text: '国家根本法',
+        text: '守法平等',
         style: 'display:inline-block;background:#CC0000;color:#ffffff;'
       },{
-        text: '根本制度',
+        text: '选举权和被选举权',
         style: 'display:inline-block;background:#CC0000;color:#ffffff;'
       },{
-        text: '根本任务',
+        text: '政治自由',
         style: 'display:inline-block;background:#CC0000;color:#ffffff;'
       },{
-        text: '基本权利',
+        text: '言论、出版、集会、结社、游行、示威',
         style: 'display:inline-block;background:#CC0066;color:#ffffff;'
       },{
-        text: '立法基础',
+        text: '申诉',
         style: 'display:inline-block;background:#CC0066;color:#ffffff;'
       },{
-        text: '立法依据',
+        text: '控告',
         style: 'display:inline-block;background:#CC0066;color:#ffffff;'
       },{
-        text: '根据宪法制定的',
+        text: '检举',
         style: 'display:inline-block;background:#CC0066;color:#ffffff;'
       },{
-        text: '宪法的具体化',
+        text: '公安机关执行',
         style: 'display:inline-block;background:#CC0066;color:#ffffff;'
       },{
-        text: '政治力量',
+        text: '生命权',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '肉体不受非法侵犯',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '非法限制、搜查、拘留和逮捕',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '姓名权、肖像权、名誉权、荣誉权和隐私权',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '非法搜查',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '侵入公民住宅',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '国家安全',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '追查刑事犯',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '公安机关',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '检察机关',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '劳动者有休息的权利',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '年老、疾病或者丧失劳动能力',
         style: 'display:inline-block;background:#CC0066;color:#ffffff;'
       }],
       test: [
         {
-          title: '关于《中华人民共和国宪法》的地位，下列说法不正确的是',
-          answer:['A.宪法在我国法律体系中居首要地位','B.宪法是人民权利的保障书',
-          'C.其他法律是宪法的基础，是宪法的具体化',
-          'D.宪法是最高的行为准则'],
-          correct:2,
-          analysis:'宪法是其他法律的立法基础和立法依据',
+          title: '根据我国相关法律规定，“剥夺政治权利”不包括剥夺',
+          answer:['A.选举权和被选举权','B.担任国家机关职务的权利',
+          'C.结婚权',
+          'D.继承权'],
+          correct:3,
+          analysis:'C.结婚权D.继承权',
           link:''
         },
         {
-          title: '下列说法中，不正确的是',
-          answer:['A.宪法的变动必然会引起普通法律随之做出相应的改变','B.宪法是国家所有法律的总和',
-          'C.宪法具有最高的法律效力',
-          'D.宪法是国家的根本大法'],
+          title: '《中华人民共和国宪法》规定，公民对国家工作人员的违法失职 行为有权向国家机关提岀申诉、控诉或者检举。这属于公民基本权利中的',
+          answer:['A.政治权利','B.监督权利',
+          'C.社会经济权利',
+          'D.人身自由权利'],
           correct:1,
-          analysis:'宪法是其他法律的立法基础不是全部',
+          analysis:'B.监督权利',
+          link:''
+        },
+        {
+          title: '大学生甲观看了电影《大唐玄奘》后，对玄奘和尚崇拜有加， 阅读了大量的佛经著作，并开始信仰佛教。甲的父母多次阻止甲参加十秒诵经会， 并将甲拘禁在房间里，烧毁了甲收藏的佛教著作。甲的父母侵犯了甲的',
+          answer:['A.宗教信仰自由','B.人格权',
+          'C.受教育权',
+          'D.隐私权'],
+          correct:0,
+          analysis:'宗教信仰自由',
+          link:''
+        },
+        {
+          title: '小张和小王原本是一对非常要好的朋友，因某件事情闹翻后， 小张为发泄自己的不满，在小王的照片上乱涂乱画了一通，然后把照片贴在小王的 公司大门上，小张的行为侵犯了小王的',
+          answer:['A.姓名权','B.名誉权',
+          'C.肖像权',
+          'D.名称权'],
+          correct:2,
+          analysis:'肖像权',
+          link:''
+        },
+        {
+          title: '我国宪法规定：“任何公民享有宪法和法律规定的权利，同时 必须履行宪法和法律规定的各项义务。”这体现了',
+          answer:['A.权利即义务，义务亦为权利','B.公民享有权利比履行义务更重要',
+          'C.在我国，公民的权利与义务是统一的',
+          'D.在我国，任何公民都要行使权利和履行义务'],
+          correct:2,
+          analysis:'在我国，公民的权利与义务是统一的',
+          link:''
+        },
+        {
+          title: '我国公民的住宅权不受侵犯是属于',
+          answer:['A.政治自由权利','B.人身自由权利',
+          'C.社会经济权利',
+          'D.人格尊严权利'],
+          correct:1,
+          analysis:'人身自由权利(4)住宅权不受侵犯。禁止非法搜查或侵入公民住宅。',
+          link:''
+        },
+        {
+          title: '下列关于我国公民基本权利和义务的表述，正确的是',
+          answer:['A.国家机关无权对公民的住宅权进行限制','B.平等权意味着公民不应受到任何差别对待',
+          'C.物质帮助权在我国属于公民的社会经济权利',
+          'D.依法服兵役是公民的基本义务，也是公民的基本权利'],
+          correct:2,
+          analysis:'6,社会经济、文化教育方面的权利(5)获得物质帮助权。公民在年老、疾病或者丧失劳动能力的情况下，有从国 家获得物质帮助的权利',
+          link:''
+        },
+        {
+          title: '下列哪一项不属于宪法规定的公民的基本权利？',
+          answer:['A.环境权','B.平等权',
+          'C.宗教信仰自由',
+          'D.受教育权'],
+          correct:0,
+          analysis:'六大权力没有',
+          link:''
+        },
+        {
+          title: '下列关于我国宪法规定的公民的基本权利和义务的说法，不正确的有',
+          answer:['A.国家机关在适用法律时，对所有公民都应平等对待','B.公民享有向任何国家机关提出批评和建议的权利',
+          'C.公民的基本权利包括劳动、受教育和依法纳税',
+          'D.公民有随时改变自己的宗教信仰的自由'],
+          correct:2,
+          analysis:'依法纳税是义务',
           link:''
         }
       ]
     },
     {
       text:`
-      <h3>1.宪法的概念</h3>
-      <p>宪法是具有最高法律效力的国家根本法。它规定国家的根本制度和根本任务，保障公民的基本权利，集中体现各种政治力量对比关系。</p>
-      <p>宪法是其他法律的立法基础和立法依据。其他法律是根据宪法制定的，是宪法的具体化。</p>
+      <h3>6.国家机构</h3>
+      <p>一级全国人民代表大会(立法机关)</p>
+      <p>全国人民代表大会常务委员会--隶属于上</p>
+      <br>
+      <p>二级中华人民共和国主席（国家机关非个人）</p>
+      <br>
+      <p>三级最高人民法院(司法机关)</p>
+      <p>三级下地方各级人民法院</p>
+      <p>三级下专门法院</p>
+      <br>
+      <p>三级最高人民检察院(司法机关)</p>
+      <p>三级下地方各级人民检察院</p>
+      <p>三级下专门检查院</p>
+      <br>
+      <p>三级国家监察委员会（2018宪法修正案新增）</p>
+      <p>三级下地方各级监察委</p>
+      <br>
+      <p>地方各级人民代表大会</p>
+      <p>地方各级人大常务委员会--隶属于上</p>
+      <br>
+      <p>三级中央军事委员会（军委主席没有任期限制）</p>
+      <br>
+      <p>三级国务院（行政机关）</p>
+      <p>三级下地方各级人民政府</p>
+      <br>
+      <h4>(一)全国人民代表大会</h4>
+      <p>1.性质和地位:全国最高的权力机关、立法机关。</p>
+      <p>2.组成和任期:全国人大由省、自治区、直辖市、特别行政区和军队代表组成。全国人大每届 任期为5年。</p>
+      <p>2018年《宪法修正案》第62条规定，全国人民代表大会行使下列职权：</p>
+      <p>
+      (1)批准省、自治区和直辖市的建置。(划分由国务院批准)<br>
+      (2)改变或者撤销全国人民代表大会常务委员会不适当的决定。<br>
+      (3)审查和批准国民经济和社会发展计划和计划执行情况的报告。<br>
+      (4)审查和批准国家的预算和预算执行情况的报告。<br>
+      (5)修改宪法。全国人民代表大会常务委员会或者五分之一以上的全国人民代 表大会代表提议，
+      并由全国人民代表大会以全体代表的三分之二以上的多数通过。（宪法三分之二，法律过半数）<br>
+      (6)监督宪法的实施。<br>
+      (7)制定和修改刑事、民事、国家机构的和其他的基本法律。<br>
+      (8)选举中华人民共和国主席、副主席。<br>
+      (9)选举中央军事委员会主席；根据中央军事委员会主席的提名，决定中央军 事委员会其他组成人员的人选。<br>
+      (10)选举国家监察委员会主任。<br>
+      (11)选举最高人民法院院长。<br>
+      (12)选举最高人民检察院检察长。<br>
+      (13)根据中华人民共和国主席的提名，决定国务院总理的人选；根据国务院 总理的提名，决定国务院副总理、国务委员、各部部长、各委员会主任、审计长、 秘书长的人选。<br>
+      (14)选举中央军事委员会主席；根据中央军事委员会主席的提名，决定中央 军事委员会其他组成人员的人选。<br>
+      (15)决定特别行政区的设立及其制度。<br>
+      (16)决定战争和和平的问题。<br>
+      </p>
+      <p>口诀：一批一改二审三法五选五决定</p>
+      <p>口诀：宪法三分之二，法律过半数</p>
+      <p>口诀：国务院组成人员：副务员部审总秘(谐音记忆：服务员不审总秘)</p>
+      <h4>(二)国务院的职权(2018《宪法修正案》)</h4>
+      <p>
+      2018年《宪法修正案》第89条规定，国务院行使下列职权：<br>
+      (一)根据宪法和法律，规定行政措施，制定行政法规，发布决定和命令；<br>
+      (二)向全国人民代表大会或者全国人民代表大会常务委员会提出议案；<br>
+      (三)规定各部和各委员会的任务和职责，统一领导各部和各委员会的工作，并且领导不属于各部和各委员会的全国性的行政工作；<br>
+      (四）统一领导全国地方各级国家行政机关的工作，规定中央和省、自治区、 直辖市的国家行政机关的职权的具体划分；<br>
+      (六）领导和管理经济工作和城乡建设、生态文明建设；(生态文明建设2018新增)<br>
+      (八)领导和管理民政、公安、司法行政等工作（2018删监察）；<br>
+      (九）管理对外事务，同外国缔结条约和协定；（外交权）<br>
+      (十二）保护华侨的正当的权利和利益，保护归侨和侨眷的合法的权利和利益；<br>
+      (十三）改变或者撤销各部、各委员会发布的不适当的命令、指示和规章；（只要是领导和被领导关系，都可以改变和撤销）<br>
+      (十四）改变或者撤销地方各级国家行政机关的不适当的决定和命令；（只要是领导和被领导关系，都可以改变和撤销）<br>
+      (十五）批准省、自治区、直辖市的区域划分，批准自治州、县、自治县、市 的建置和区域划分；
+      （对比记忆：《宪法》第107条第3款，省、直辖市的人民政府 决定乡、民族乡、镇的建置和区域划分）<br> 
+      (十六）依照法律规定决定省、自治区、直辖市的范围内部分地区进入紧急状态。
+      </p>
+      <p>省市县乡建制口诀：乡我省，村找县，县级以上国务院，全国人大批省建</p>
+      <br>
+      <p>（三）全国人大常委会的职权（2018《宪法修正案》）</p>
+      <p>口诀：两个解释/监督/撤销/规定/闭会期间五个提名六个决定</p>
+      <p>口诀：如果上下级是监督关系，上级只能撤销不能改变下级立法（对于地方常委只能撤不能改，因为是监督关系）</p>
+      <br>
+      <p>2018《宪法修正案》第67条规定全国人民代表大会常务委员会行使下列职权：</p>
+      <p>（一）解释宪法，监督宪法的实施；</p>
+      <p>（二）制定和修改除应当由全国人民代表大会制定的法律以外的其他法律；</p>
+      <p>（三）在全国人民代表大会闭会期间，对全国人民代表大会制定的法律进行部 分补充和修改，但是不得同该法律的基本原则相抵触；</p>
+      <p>（四）解释法律；</p>
+      <p>（五）在全国人民代表大会闭会期间，审查和批准国民经济和社会发展计划、 国家预算在执行过程中所必须作的部分调整方案；</p>
+      <p>（六）监督国务院、中央军事委员会、国家监察委员会、最高人民法院和最高 人民检察院的工作；（2018监察委新增）</p>
+      <p>（七）撤销国务院制定的同宪法、法律相抵触的行政法规、决定和命令；（人大常委会和国务院为监督和被监督关系）</p>
+      <p>（八）撤销省、自治区、直辖市国家权力机关制定的同宪法、法律和行政法规 相抵触的地方性法规和决议；（地方权力机关也为人大，与全国人大监督被监督）</p>
+      <p>（九）在全国人民代表大会闭会期间，根据国务院总理的提名，决定部长、委 员会主任、审计长、秘书长的人选；</p>
+      <p>（十）在全国人民代表大会闭会期间，根据中央军事委员会主席的提名，决定 中央军事委员会其他组成人员的人选；</p>
+      <p>（十一）根据国家监察委员会主任的提请，任免国家监察委员会副主任、委员；</p>
+      <p>（十二）根据最高人民法院院长的提请，任免最高人民法院副院长、审判员、 审判委员会委员和军事法院院长；</p>
+      <p>（十三）根据最高人民检察院检察长的提请，任免最高人民检察院副检察长、 检察员、检察委员会委员和军事检察院检察长，并且批准省、自治区、直辖市的人 民检察院检察长的任免；</p>
+      <p>（十四）决定驻外全权代表的任免;</p>
+      <p>（十五）决定同外国缔结的条约和重要协定的批准和废除；（可以行使国家元首职权）</p>
+      <p>（十六）规定军人和外交人员的衔级制度和其他专门衔级制度；</p>
+      <p>（十七）规定和决定授予国家的勋章和荣誉称号；</p>
+      <p>（十八）决定特赦；</p>
+      <p>（十九）在全国人民代表大会闭会期间，如果遇到国家遭受武装侵犯或者必须 履行国际间共同防止侵略的条约的情况，决定战争状态的宣布；</p>
+      <p>（二十）决定全国总动员或者局部动员；</p>
+      <p>（二十一）决定全国或者个别省、自治区、直辖市进入紧急状态；</p>
+      <p>（二十二）全国人民代表大会授予的其他职权。</p>
+      <br>
+      <p>2018《宪法修正案》第63条规定，全国人民代表大会有权罢免下列人员：</p>
+      <p>
+      （1）中华人民共和国主席、副主席；
+      （2）国务院总理、副总理、国务委员、各部部长、各委员会主任、审计长、秘 书长；
+      （3）中央军事委员会主席和中央军事委员会其他组成人员；
+      （4）国家监察委员会主任；
+      （5）最高人民法院院长；
+      （6）最咼人民检察院检察长。
+      </p>
+
       `,
-      id:'id1',
+      id:'id7',
       matching: [{
-        text: '最高法律效力',
+        text: '决定战争状态的宣布',
         style: 'display:inline-block;background:#CC0000;color:#ffffff;'
       },{
-        text: '国家根本法',
+        text: '紧急状态',
         style: 'display:inline-block;background:#CC0000;color:#ffffff;'
       },{
-        text: '根本制度',
+        text: '监督',
         style: 'display:inline-block;background:#CC0000;color:#ffffff;'
       },{
-        text: '根本任务',
+        text: '解释宪法',
         style: 'display:inline-block;background:#CC0000;color:#ffffff;'
       },{
-        text: '基本权利',
+        text: '解释法律',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '改变或者撤销',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '区域划分',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '对外事务',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '缔结条约和协定',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '民政、公安、司法行政',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '经济工作',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '城乡建设',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '国家行政机关的工作',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '生态文明建设',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '任务和职责',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '统一领导各部和各委员会',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '制定行政法规',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '提出议案',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '国务院总理的人选',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '国务院副总理',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '人民检察院检察长',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '国主席的提名',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '监察委员会主任',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '人民法院院长',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '中央军事委员会主席',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '中央军事委员会主席的提名',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '全体代表的三分之二',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '国主席、副主席',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '最高的权力机关、立法机关',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '任期为5年',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '一批一改二审三法五选五决定',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '省、自治区和直辖市的建置',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '改变或者撤销',
         style: 'display:inline-block;background:#CC0066;color:#ffffff;'
       },{
-        text: '立法基础',
+        text: '修改宪法',
         style: 'display:inline-block;background:#CC0066;color:#ffffff;'
       },{
-        text: '立法依据',
+        text: '监督宪法的实施',
         style: 'display:inline-block;background:#CC0066;color:#ffffff;'
       },{
-        text: '根据宪法制定的',
+        text: '其他的基本法律',
         style: 'display:inline-block;background:#CC0066;color:#ffffff;'
       },{
-        text: '宪法的具体化',
+        text: '常务委员会',
         style: 'display:inline-block;background:#CC0066;color:#ffffff;'
       },{
-        text: '政治力量',
+        text: '五分之一',
         style: 'display:inline-block;background:#CC0066;color:#ffffff;'
       }],
       test: [
         {
-          title: '关于《中华人民共和国宪法》的地位，下列说法不正确的是',
-          answer:['A.宪法在我国法律体系中居首要地位','B.宪法是人民权利的保障书',
-          'C.其他法律是宪法的基础，是宪法的具体化',
-          'D.宪法是最高的行为准则'],
+          title: '下列不属于国家机构组成部分的是',
+          answer:['A.全国人大常委会','B.国家主席',
+          'C.全国政协',
+          'D.国务院'],
           correct:2,
-          analysis:'宪法是其他法律的立法基础和立法依据',
+          analysis:'全国政协属于爱国统一战线的组织形式',
           link:''
         },
         {
-          title: '下列说法中，不正确的是',
-          answer:['A.宪法的变动必然会引起普通法律随之做出相应的改变','B.宪法是国家所有法律的总和',
-          'C.宪法具有最高的法律效力',
-          'D.宪法是国家的根本大法'],
+          title: '中华人民共和国的最高权力机关是',
+          answer:['A.国务院','B.全国人民代表大会',
+          'C.全国人民政治协商会议',
+          'D.中央人民政府'],
           correct:1,
-          analysis:'宪法是其他法律的立法基础不是全部',
+          analysis:'全国人民代表大会全国最高的权力机关、立法机关。',
+          link:''
+        },
+        {
+          title: '国人民代表大会是我国的最高权力机关，依法行使国家的',
+          answer:['A.立法权','B.行政权',
+          'C.司法权',
+          'D.执行权'],
+          correct:0,
+          analysis:'全国人民代表大会全国最高的权力机关、立法机关。',
+          link:''
+        },
+        {
+          title: '根据宪法和法律的规定，下列职位中由全国人民代表大会选 举产生的是',
+          answer:['A.国务院总理','B.国家副主席',
+          'C.军委副主席',
+          'D.最高人民法院副院长'],
+          correct:1,
+          analysis:'(8)选举中华人民共和国主席、副主席。',
+          link:''
+        },
+        {
+          title: '根据我国宪法的规定，下列有关国务院的表述不正确的是',
+          answer:['A.国务院实行集体负责制','B.国务院是最高国家行政机关',
+          'C.国务院是我国的中央人民政府',
+          'D.国务院是最高国家权力机关的执行机关'],
+          correct:0,
+          analysis:'为总理负责制',
+          link:''
+        },
+        {
+          title: '国务院可以制定',
+          answer:['A.基本法律','B.行政规章',
+          'C.行政法规',
+          'D.自治条例'],
+          correct:0,
+          analysis:'C.行政法规',
+          link:''
+        },
+        {
+          title: '国务院提出的议案应由（	）签署',
+          answer:['A.国务院','B.全国人民代表大会',
+          'C.国家主席',
+          'D.国务院总理'],
+          correct:3,
+          analysis:'最高领导签',
+          link:''
+        },
+        {
+          title: '根据《宪法》规定，国家立法权的行使主体是',
+          answer:['A.全国人民代表大会','B.全国人民代表大会常务委员会',
+          'C.国家主席',
+          'D.国务院'],
+          correct:0,
+          analysis:'A.全国人民代表大会B.全国人民代表大会常务委员会（开会闭会）',
+          link:''
+        }
+      ]
+    },
+    {
+      text:`
+      <h4>（四）人大代表</h4>
+      <p>1.集体行使权利</p>
+      <p>（1）提出议案（人大代表在人大会召开之前递交议案，一个代表团或者30名以上代表联名，可以向全国人大提出属于全国人大职权范围内的议案）；<br>
+      （2）提出质询和询问（在全国人大会议期间，一个代表团或者30名以上代表 联名，可以书面提出对国务院及其部委的质询案，由主席团决定交受质询机关书面 答复，或者由受质询机关的领导人在主席团会议上或者有关的专门委员会会议上或 者有关的代表团会议上口头答复）。
+      </p>
+      <p>2.人大代表个人权利</p>
+      <p>（1）工作便利权和物质权；<br>
+      （2）言论免责权；（全国人大代表在全国人大各种会议上的发言和表决不受法 律追究）<br>
+      （3）人身特别保护权（人大代表具有刑事豁免权，即非经特别许可不受限制人 身自由、逮捕或审判的权利。但乡级人大代表没有刑事豁免权）。<br>
+      </p>
+      <p>《代表法》规定，县级以上的各级人大代表，非经本级人大主席团许可，在本 级人大闭会期间，非经本级人大常委会许可，不受逮捕或者刑事审判。如果因为是 现行犯被拘留，执行拘留的机关应当立即向该级人民代表大会主席团或者人民代表 大会常务委员会报告。</p>
+      <p>乡、民族乡、镇的人民代表大会代表，如果被逮捕、受刑事审判或者被采取法 律规定的其他限制人身自由的措施，执行机关应当立即报告乡、民族乡、镇的人民 代表大会。（乡级人大代表没有刑事豁免权）</p>
+      <p>《选举法》第51条：地方各级人民代表大会代表在任期内调离或者迁出本行政 区域的，其代表资格自行终止，缺额另行补选。</p>
+      <p>十七大：城乡按相同人口比例选举人大代表，我国实现更广泛民主的途径是提 高基层人大代表比例。</p>
+      <h4>（五）中华人民共和国主席（2018《宪法修正案》）</h4>
+      <p>口诀：公布权、任免权、外事权、授予荣誉权</p>
+      <p>1.性质</p>
+      <p>国家元首，包括国家主席和副主席。</p>
+      <p>第79条规定，中华人民共和国主席、副主席由全国人民代表大会选举。有选举 权和被选举权的年满四十五周岁的中华人民共和国公民可以被选为中华人民共和国 主席、副主席。</p>
+      <p>中华人民共和国主席、副主席每届任期同全国人民代表大会每届任期相同。（5年）</p>
+      <p>国家主席行使职权须以全国人大或全国人大常委会的决定为依据，主要釆取主席令的形式。</p>
+      <p>中华人民共和国主席缺位的时候，由副主席继任主席的职位。中华人民共和国 副主席缺位的时候，由全国人民代表大会补选。在补选以前，由全国人民代表大会 常务委员会委员长暂时代理主席职位。</p>
+      <p>2.国家主席职权</p>
+      <p>公布权345、任免权6、外事权12、授予荣誉权7</p>
+      <p>
+      (1)代表国家，进行国事活动。<br>
+      (2)代表国家，接受外国使节。<br>
+      (3)根据全国人大常委会的决定，宣布批准或废除条约和重要协定。<br>
+      (4)公布法律，发布命令。<br>
+      (5)发布特赦令、宣布进入紧急状态、动员令、宣布战争状态等。<br>
+      (6)国务院总理、副总理、国务委员……，经全国人大或全国人大常委会正式 确定人选后，由国家主席宣布其任职或免职。国家主席根据全国人大常委会的决定, 派出或召回驻外大使。<br>
+      (7)根据全国人大常委会的决定，代表国家向那些对国家有重大功勋的人授予 荣誉奖章和光荣称号。
+      </p>
+      <h4>（六）监察委员会（2018《宪法修正案》）</h4>
+      <p>
+      第123条 中华人民共和国各级监察委员会是国家的监察机关。<br>
+      第124条中华人民共和国设立国家监察委员会和地方各级监察委员会。<br>
+      监察委员会由下列人员组成：主任，副主任若干人，委员若干人。<br>
+      监察委员会主任每届任期同本级人民代表大会每届任期相同。国家监察委员会 主任连续任职不得超过两届。监察委员会的组织和职权由法律规定。<br>
+      第125条 中华人民共和国国家监察委员会是最高监察机关。国家监察委员会 领导地方各级监察委员会的工作，上级监察委员会领导下级监察委员会的工作。<br>
+      第126条 国家监察委员会对全国人民代表大会和全国人民代表大会常务委员 会负责。地方各级监察委员会对产生它的国家权力机关和上一级监察委员会负责。<br>
+      第127条监察委员会依照法律规定独立行使监察权，不受行政机关、社会团 体和个人的干涉。监察机关办理职务违法和职务犯罪案件，应当与审判机关、检察 机关、执法部门互相配合，互相制约。
+      </p>
+      <p>【任期总结】</p>
+      <p>全国人大委员长、副委员长连续任职不得超过两届。</p>
+      <p>国务院总理、副总理、国务委员连续任职不得超过两届。</p>
+      <p>最高人民法院院长每届任期同全国人民代表大会每届任期相同，连续任职不得超过两届。</p>
+      <p>最高人民检察院检察长每届任期同全国人民代表大会每届任期相同，连续任职不得超过两届。</p>
+      <p>监察委员会主任每届任期同本级人民代表大会每届任期相同。国家监察委员会主任连续任职不得超过两届（地方不受限制）</p>
+      <h4>（七）法院和检察院</h4>
+      <p>法院性质：审判机关。(为4级：最高、省高、市中、基层。两审终审。司法独立。)</p>
+      <p>领导体制：上级人民法院监督下级法院的审判工作</p>
+      <p>检察院性质：法律监督机关。</p>
+      <p>双重领导体制：下级接受上级领导+向本级人大及其常委会负责</p>
+      `,
+      id:'id8',
+      matching: [{
+        text: '一个代表团或者30名以上代表',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '刑事豁免权',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '立即报告乡',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '任期内调离或者迁出',
+        style: 'display:inline-block;background:#CC0000;color:#ffffff;'
+      },{
+        text: '代表资格自行终止',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '公布权、任免权、外事权、授予荣誉权',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '年满四十五周岁',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '主席令',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '公布权345、任免权6、外事权12、授予荣誉权7',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '国家的监察机关',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '连续任职不得超过两届',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '领导地方各级监察委员会',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '国家权力机关',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '上一级监察委员会负责',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '不受行政机关',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '职务违法',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '职务犯罪',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '不得超过两届',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      },{
+        text: '法院监督下',
+        style: 'display:inline-block;background:#CC0066;color:#ffffff;'
+      }],
+      test: [
+        {
+          title: '国家主席具有(	)性质和权力',
+          answer:['A.每一届任期8年','B.可以修改法律',
+          'C.可以发布特赦令',
+          'D.可以解释宪法'],
+          correct:2,
+          analysis:'C.结婚权D.继承权',
+          link:''
+        },
+        {
+          title: '下列关于我国国家主席的说法，正确的有',
+          answer:['A.有选举权和被选举权的年满四十五周岁的中华人民共和国公民可以被选举为 中华人民共和国主席',
+          'B.国家主席是我国国家机构的重要组成部分，是一个相对独立的国家机关',
+          'C.中华人民共和国主席连续任职不得超过两届',
+          'D.中华人民共和国主席每届任期同全国人民代表大会每届任期不同'],
+          correct:0,
+          analysis:'A.有选举权和被选举权的年满四十五周岁的中华人民共和国公民可以被选举为 中华人民共和国主席B.国家主席是我国国家机构的重要组成部分，是一个相对独立的国家机关',
+          link:''
+        },
+        {
+          title: '人民法院是我国的审判机关，上级人民法院（	）下级人民法院的审判工作。',
+          answer:['A.领导','B.指导',
+          'C.监督',
+          'D.配合'],
+          correct:2,
+          analysis:'领导体制：上级人民法院监督下级法院的审判工作',
           link:''
         }
       ]

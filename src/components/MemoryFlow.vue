@@ -101,8 +101,10 @@ export default {
     let thestring = constitution1.node
     console.log(thestring)
     thestring.forEach(function (item) {
+      // 划重点
       try {
         item.matching.forEach(function (node) {
+          console.log(node.text)
           item.text = item.text.replace(eval(`/${node.text}/g`), `<span style="${node.style}">${node.text}</span>`)
         })
       } catch (err) {
